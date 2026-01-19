@@ -24,6 +24,8 @@ This project is ideal for beginners and front-end developers who want to showcas
    https://github.com/manjulashanmugam/simple-login_page-for-CinePass-Access.git
 2. Open the project folder
 3. Run the index.html file in any modern web browser
+4. Live demo link :
+    https://manjulashanmugam.github.io/simple-login_page-for-CinePass-Access/
 
 📌 Project Purpose
 This project is created for learning, practice, and portfolio demonstration.
