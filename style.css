@@ -1,0 +1,188 @@
+/* Background */
+.overlay {
+    background-image: url("./images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Logo */
+#banner {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 2;
+}
+
+/* Card */
+.mid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) scale(0.9);
+
+    width: 360px;
+    padding: 45px 40px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(169, 20, 8, 0.95),
+        rgba(120, 10, 10, 0.95)
+    );
+
+    border-radius: 28px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    z-index: 2;
+
+    animation: fadeScale 1s ease forwards;
+}
+
+/* Heading */
+h2 {
+    color:black;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 14px 16px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    font-size: 16px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: #ffd700;
+}
+
+/* Error */
+.error {
+    color: #ffd700;
+    font-size: 13px;
+    margin-top: 6px;
+    display: block;
+    min-height: 16px;
+}
+
+/* Password toggle */
+.password-box {
+    position: relative;
+}
+
+.toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ff3d3d, #b30000);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Animation */
+@keyframes fadeScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .mid {
+        width: 90%;
+        padding: 30px 24px;
+    }
+}
+/* Glass light sweep button */
+.glass-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+/* white glass line */
+.glass-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.45),
+        transparent
+    );
+}
+
+.glass-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.45),
+        transparent
+    );
+    animation: buttonGlass 2s linear infinite;
+}
+
+
+@keyframes buttonGlass {
+    from {
+        left: -120%;
+    }
+    to {
+        left: 120%;
+    }
+}
+
+
